@@ -8,6 +8,10 @@
      }
   })
 
+// toujours plus propre d'avoir une function qui va renvoyer une chaîne prête à l'usage
+// ou ici un objet 
+// computed ici parfaitement adapté car pas de param et pas la valeur ne change pas
+
 const getProfilePic = computed(()=>{
     return { 
       backgroundImage: `url(./src/assets/img/${props.team.profilePic})`

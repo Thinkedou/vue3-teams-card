@@ -4,7 +4,8 @@ const props = defineProps({
     type:Array
   }
 })
-
+// on peut utiliser la syntaxe abrégé ici car on return juste une string
+// pas possible d'utiliser une computed ici car elle attend un paramètre 
 const showStars = (level) => '⭐'.repeat(level)
 
 

@@ -3,7 +3,6 @@ import {ref} from "vue"
 import {TEAMS} from "./assets/js/teamsApp"
 import TeamsCard from './components/TeamsCard.vue';
 
-console.log(TEAMS)
 
 const localTeams = ref(TEAMS)
 
@@ -13,7 +12,7 @@ const localTeams = ref(TEAMS)
 <template>
   
   <TeamsCard 
-      v-for="(team,idx) in localTeams"
+      v-for="(team) in localTeams"
       :key = "team.profilePic"
       :team="team"
   />
